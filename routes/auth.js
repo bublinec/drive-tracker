@@ -20,7 +20,7 @@ router.post("/register", function(req, res){
         }
         // if successfully create a user, then login and redirect
         passport.authenticate("local")(req, res, function(){
-            res.redirect("/ponds");
+            res.redirect("/rides");
         });
     });
 });
@@ -32,14 +32,14 @@ router.get("/login", function(req, res){
 
 // login lgic
 router.post("/login", passport.authenticate("local", {
-    successRedirect: "ponds",
+    successRedirect: "rides",
     failureRedirect: "login"
 }));
 
 // log out
 router.get("/logout", function(req, res){
     req.logout();
-    res.redirect("/ponds");
+    res.redirect("/rides");
 });
 
 

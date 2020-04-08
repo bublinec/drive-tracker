@@ -1,0 +1,39 @@
+<%- include("partials/header") %> 
+
+<div class="container">
+    <div class="well">
+        <!-- display comments -->
+        <% rides.forEach(function(ride){ %>
+            <div class="row">
+                <div class="col-md-1">
+                    <strong><%= ride.author.username %> </strong>
+                </div>
+                <div class="col-md-11">
+                    <p>
+                        <%= ride.distance %>
+                        <span id="ride_time" class="pull-right">10 days ago</span>
+                    </p>
+                </div>
+            </div>
+        <hr>
+        <% }) %>
+
+        <!-- new comment form -->
+        <% if(current_user) {%> 
+            <form action="/rides" method="post">
+                <div class="row">
+                    <div class="col-md-1">
+                        <label><%= current_user.username %> </label>
+                    </div>
+                    <div class="col-md-11">
+                    <div class="input_and_button">
+                        <input class="form-control" id="comment_input" type="text" name="distance" placeholder="Distance">
+                        <input class="btn btn-success" type="submit" value="Submit">
+                    </div>
+                </div>    
+            </form>
+        <% } %> 
+    </div>
+</div>
+
+<%- include("partials/footer") %> 

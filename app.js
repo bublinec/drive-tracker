@@ -6,19 +6,15 @@ const express = require("express"),
       localStrategy = require("passport-local");
 
 // Models:
-const Pond = require("./modules/pond"),
-      User = require("./modules/user"),
-      Comment = require("./modules/comment");
+const Ride = require("./modules/ride"),
+      User = require("./modules/user");
 
 // Routes:
 const authRoutes = require("./routes/auth"),
-      pondRoutes = require("./routes/ponds"),
       indexRoutes = require("./routes/index");
 
 // DB:
-mongoose.connect("mongodb://localhost/pondbook", {useNewUrlParser: true, useUnifiedTopology: true});
-const seedDB = require("./seeds");
-// seedDB();
+mongoose.connect("mongodb://localhost/drive_tracker", {useNewUrlParser: true, useUnifiedTopology: true});
 
 // App configuration
 const app = express();
@@ -49,8 +45,6 @@ app.use(function(req, res, next){
 // routes
 app.use("/", indexRoutes);
 app.use("/", authRoutes);
-app.use("/ponds", pondRoutes);
-
 
 // Start server
 const port = process.env.PORT || 3000; 

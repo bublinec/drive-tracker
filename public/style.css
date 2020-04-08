@@ -1,4 +1,4 @@
-hr{
+/* hr{
     margin: 10px 0;
 }
 
@@ -31,10 +31,6 @@ hr{
     margin: 0.5vh 0;
 }
 
-.form_div{
-    width: 35%;
-    margin: 10vh auto;
-}
 
 .form-group input{
     margin: 2vh 0;
@@ -45,7 +41,15 @@ hr{
     display: inline;
 }
 
-#comment_time{
+*/
+
+
+.form_div{
+    width: 35%;
+    margin: 10vh auto;
+}
+
+#ride_time{
     font-size: 0.85em;
     color: #575555 
-}
+} 
