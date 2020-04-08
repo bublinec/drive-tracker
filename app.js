@@ -53,7 +53,7 @@ app.use("/ponds", pondRoutes);
 
 
 // Start server
-const port = 8000; 
+const port = process.env.PORT || 3000; 
 app.listen(port, function(err){
     if(err){
         console.log(err);     

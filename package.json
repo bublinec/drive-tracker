@@ -1,21 +1,21 @@
 {
-  "name": "social-networking-site",
+  "name": "drive-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bublinec/Social-Networking-Site.git"
+    "url": "git+https://github.com/bublinec/drive-tracker.git"
   },
   "author": "Juraj Bublinec",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bublinec/Social-Networking-Site/issues"
+    "url": "https://github.com/bublinec/drive-tracker/issues"
   },
-  "homepage": "https://github.com/bublinec/Social-Networking-Site#readme",
+  "homepage": "https://github.com/bublinec/drive-tracker#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.0.2",
