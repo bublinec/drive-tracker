@@ -4,7 +4,7 @@ const express = require("express"),
       
 
 // Landing page
-router.get("/", function(req, res){
+router.get("*", function(req, res){
     res.render("landing");
 })
 
