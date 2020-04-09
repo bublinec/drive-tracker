@@ -14,7 +14,7 @@ const authRoutes = require("./routes/auth"),
       indexRoutes = require("./routes/index");
 
 // DB:
-mongoose.connect("mongodb://localhost/drive_tracker", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb://heroku_86qt99x8:hq1oqaop1m746569r2u08aojaj@ds123718.mlab.com:23718/heroku_86qt99x8", {useNewUrlParser: true, useUnifiedTopology: true});
 
 // App configuration
 const app = express();
