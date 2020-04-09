@@ -41,11 +41,8 @@ hr{
     display: inline;
 }
 
-
-
-
 .form_div{
-    width: 35%;
+    max-width: 400px;
     margin: 10vh auto;
 }
 
