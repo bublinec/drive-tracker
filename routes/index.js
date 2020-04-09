@@ -17,7 +17,7 @@ function isLoggedIn(req, res, next){
 
 // ROUTES
 router.get("/", function(req, res){
-    res.render("landing");
+    res.redirect("/rides");
 })
 
 router.get("/dashboard", function(req, res){
